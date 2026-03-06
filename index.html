@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 | login</title>
+
+    <!-- tailwine+daisy -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: "Geist", sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="min-h-screen max-w-md bg-base-200 mx-auto">
+        <div class="logo w-[200px] mx-auto pt-32">
+            <img class=" mx-auto" src="./assets/github-logo.png" alt="">
+        </div>
+        <div class="  ">
+            <h1 class=" w-[70%] text-[30px] mx-auto">GitHub Issues Tracker</h1>
+            <p class="mx-auto w-[50%] text-slate-500">Sign in to manage your issues</p>
+        </div>
+
+        <div class="form pt-10">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label font-bold text-[15px]">Username</label>
+          <input id="input-text" type="text" class="input" placeholder="Enter Username" />
+          <br>
+          <label class="label font-bold text-[15px]">Password</label>
+          <input id="input-password" type="password" class="input" placeholder="Enter Password" />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button id="login-btn" class="btn bg-blue-700 text-white rounded-xl mt-4">Sign In</button>
+        </fieldset>
+      </div>
+    </div>
+        </div>
+    </section>
+    
+    <script src="./login.js"></script>
+
+</body>
+</html>
