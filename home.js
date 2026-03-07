@@ -1,6 +1,6 @@
 let allIssues = [];
 
-// Spinner
+
 const manageSpinner = (status) => {
   const spinner = document.getElementById("spinner");
 
@@ -11,7 +11,7 @@ const manageSpinner = (status) => {
   }
 };
 
-// Load All Issues
+
 const loadIssues = async () => {
   manageSpinner(true);
 
@@ -28,7 +28,7 @@ const loadIssues = async () => {
   manageSpinner(false);
 };
 
-// Display Cards
+
 const displayIssues = (issues) => {
   const container = document.getElementById("issues-container");
 
