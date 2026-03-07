@@ -24,59 +24,116 @@
 </head>
 
 <body>
-    <section>
-        <div class="navbar bg-base-100 shadow-sm px-[5%]">
-        <div class="flex items-center gap-2 flex-1">
-            <img class="w-[30px]" src="./assets/github-logo.png" alt="">
-            <a class="btn btn-ghost text-xl">GitHub Issues Tracker</a>
-        </div>
-
-        <div class="flex gap-2">
-            <input type="text" placeholder="Search issues..." class="input input-bordered w-50 md:w-auto" />
-            <div class="border ">
-                <button class="bg-blue-700 text-white w-[120px] py-3">+new issue</button>
-                
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <section class="w-[80%] border mx-auto my-5">
-        <div>
-            <button class="border border-red-600 px-10 py-2">All</button>
-            <button class="border border-red-600 px-10 py-2">Open</button>
-            <button class="border border-red-600 px-10 py-2">Closed</button>
-
-        </div>
-        </section>
-
-        <section class="w-[80%] border mx-auto flex justify-between items-center">
-
-    <!-- Left side -->
-    <div class="flex items-center gap-4">
-        <div>
-            <img src="./assets/Aperture.png" alt="">
-        </div>
-
-        <div>
-            <h2 class="text-xl font-bold">50 Issues</h2>
-            <p>Track and manage your project issues</p>
-        </div>
-    </div>
-
-    <!-- Right side -->
-    <div class="flex gap-4">
-        <h5 class="font-semibold cursor-pointer">Open</h5>
-        <h5 class="font-semibold cursor-pointer">Closed</h5>
-    </div>
-
-    </section>
 
 
-        
+    <!-- NAVBAR -->
+
+<div class="navbar bg-white shadow px-[5%]">
+
+<div class="flex items-center gap-2 flex-1">
+<img class="w-[30px]" src="./assets/github-logo.png">
+<h2 class="text-xl font-bold">GitHub Issues Tracker</h2>
+</div>
+
+<div class="flex gap-3">
+
+<input id="search-input" type="text"
+placeholder="Search issues..."
+class="input input-bordered w-60"/>
+
+<button id="search-btn" class="btn btn-primary">
+Search
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- FILTER BUTTONS -->
+
+<section class="w-[80%] mx-auto my-6 flex gap-3">
+
+<button onclick="loadIssues()" class="btn btn-outline">
+All
+</button>
+
+<button onclick="filterIssues('open')" class="btn btn-outline">
+Open
+</button>
+
+<button onclick="filterIssues('closed')" class="btn btn-outline">
+Closed
+</button>
+
+</section>
+
+
+
+<!-- HEADER -->
+
+<section class="w-[80%] mx-auto bg-white p-6 rounded-lg flex justify-between items-center">
+
+<div class="flex items-center gap-4">
+
+<img src="./assets/Aperture.png" class="w-10">
+
+<div>
+<h2 id="issue-count" class="text-xl font-bold">Issues</h2>
+<p class="text-gray-500">Track and manage your project issues</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SPINNER -->
+
+<section id="spinner" class="flex justify-center py-10 hidden">
+
+<span class="loading loading-bars loading-lg"></span>
+
+</section>
+
+
+
+<!-- ISSUE CARDS -->
+
+<section id="issues-container"
+class="w-[80%] mx-auto my-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+</section>
+
+
+
+
+<!-- ISSUE DETAILS MODAL -->
+
+<dialog id="issue_modal" class="modal">
+
+<div class="modal-box">
+
+<div id="modal-content"></div>
+
+<div class="modal-action">
+<form method="dialog">
+<button class="btn">Close</button>
+</form>
+</div>
+
+</div>
+
+</dialog>
+
+
+
+
+
     
     
-
+    <script src="./home.js"></script>
 </body>
 
 </html>
