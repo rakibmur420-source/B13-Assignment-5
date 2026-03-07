@@ -1,6 +1,6 @@
 let allIssues = [];
 
-
+// spinner
 const manageSpinner = (status) => {
   const spinner = document.getElementById("spinner");
 
@@ -11,7 +11,7 @@ const manageSpinner = (status) => {
   }
 };
 
-
+// load all issues
 const loadIssues = async () => {
   manageSpinner(true);
 
@@ -28,7 +28,7 @@ const loadIssues = async () => {
   manageSpinner(false);
 };
 
-
+// display cards
 const displayIssues = (issues) => {
   const container = document.getElementById("issues-container");
 
@@ -106,13 +106,13 @@ const displayIssues = (issues) => {
   });
 };
 
-
+// filter
 const filterIssues = (status) => {
   const filtered = allIssues.filter((issue) => issue.status === status);
   displayIssues(filtered);
 };
 
-
+// load single issue
 const loadIssueDetails = async (id) => {
   const res = await fetch(
     `https://phi-lab-server.vercel.app/api/v1/lab/issue/${id}`
@@ -123,7 +123,7 @@ const loadIssueDetails = async (id) => {
   displayModal(data.data);
 };
 
-
+// modal layout
 const displayModal = (issue) => {
   const modalContent = document.getElementById("modal-content");
 
@@ -191,7 +191,7 @@ const displayModal = (issue) => {
   document.getElementById("issue_modal").showModal();
 };
 
-
+// Search
 document.getElementById("search-btn").addEventListener("click", async () => {
   const text = document.getElementById("search-input").value;
 
