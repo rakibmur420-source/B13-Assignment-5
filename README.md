@@ -1,37 +1,46 @@
+## Default:
+  username: admin
+  password: admin123
+
+##  Overview
+This project is a dynamic and responsive web application developed as part of an assignment.  
+It highlights modern UI design, smooth user interaction, and dynamic features using JavaScript.
+
+##  Technologies Used
+- HTML5  
+- CSS3  
+- JavaScript
+- API
+- Tailwind CSS
+
+##  Features
+- Fully responsive design (Mobile, Tablet, Desktop)
+- Interactive and user-friendly interface
+- Dynamic functionality using JavaScript
+- Clean and organized code structure
+- Smooth user experience
+
+##  Dependencies
+No external libraries or frameworks are used.  
+This project is built using pure HTML, CSS, and JavaScript.
+
+## ⚙️ How to Run Locally
+
+ Clone the repository:
+
+git clone https://github.com/your-username/B13-Assignment-5.git
+
+## Relevant Links
+ live link: https://rakibmur420-source.github.io/B13-Assignment-5/
+
+ git repo link: https://github.com/rakibmur420-source?tab=repositories
+
+##  Screenshot
 
 
-1️⃣ What is the difference between var, let, and const?
+<img width="609" height="854" alt="Screenshot 2026-04-09 155618" src="https://github.com/user-attachments/assets/da722753-d2ef-47d5-afdd-489a4fe5f494" />
+<img width="1707" height="849" alt="Screenshot 2026-04-09 155718" src="https://github.com/user-attachments/assets/63643b0a-d542-41cd-b05a-09b680beefd0" />
+<img width="1830" height="861" alt="Screenshot 2026-04-09 155639" src="https://github.com/user-attachments/assets/a1ad1ce8-895f-404d-a6d9-2772476d80dc" />
 
-ANS :-  var: Function-scoped, can be redeclared and updated.
 
-let: Block-scoped, can be updated but not redeclared in the same scope.
 
-const: Block-scoped, cannot be updated or redeclared; value must be assigned at declaration.
-
-2️⃣ What is the spread operator?
-
-ANS:- The spread operator in JavaScript is used to expand or unpack elements of an array, object, or iterable into individual elements.
-
-It is useful for copying arrays/objects, merging arrays, or passing multiple arguments to a function.
-
-3️⃣ What is the difference between map(), filter(), and forEach()?
-
-ANS:- map() -> Returns a new array with transformed elements.
-
-filter() -> Returns a new array with elements that pass a condition.
-
-forEach() -> Iterates over array; returns nothing.
-
-4️⃣ What is an arrow function?
-
-ANS:- An arrow function is a shorter syntax for writing functions in JavaScript using.
-
-It does not have its own this, making it useful in certain contexts.
-
-It is often used for inline functions and callbacks.
-
-5️⃣ What are template literals?
-
-ANS:- Template literals are string literals enclosed in backticks ` instead of quotes.
-
-They allow embedded expressions, variables, and multiline strings without concatenation.
